@@ -12,5 +12,7 @@ export default defineConfig({
   site: 'https://smm-admin-panel.vercel.app/',
   // site: 'https://smm-admin-phi.vercel.app/',
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    runtime: 'nodejs20.x'
+  })
 });
